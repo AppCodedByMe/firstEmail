@@ -1,0 +1,132 @@
+HTML Email Notes
+
+*Determine the Purpose of the email FIRST
+*1 Eyeball, 1 Thumb, Arms Length:
+	Min font size 16px
+	CTA touch targets at least 46px squared
+	Avoid clustering several links together
+	Consider how people use devices and design accordingly
+
+-----------------------------------------------------------------------
+xhtml strict
+CSS 2.1
+CSS3 Border Radius & Box Shadow (decorative)
+CSS Inline (MC Inliner & Premailer)
+Writing a Reset Style group is recommended, because it will ensure email is rendered well across email clients
+
+
+
+-----------------------------------------------------------------------
+One to Many
+or
+Transaction - Usually Triggered by a Transaction
+	
+
+One to Many:
+More like a regular website
+
+Transactional:
+Not distracting & focused on the transaction
+
+-----------------------------------------------------------------------
+One to Many: 
+
+Read Me: Newsleters (good writing and typography for easy reading)
+Buy Me: ECommerce (combine interesting visuals and ease of use)
+Join Me Invitation (Crystal Clear Information & Clear Call to Action)
+
+-----------------------------------------------------------------------
+Transactional: More Narrow in Scope
+
+Focused
+Short, But Comprehensive
+Appropriate
+Practical
+
+*If you make a purchase, expect a receipt
+*If you open an account, expect a confirmation
+*If you forget your pw, expect a link for how to reset
+
+*Remember, TMI is overwhelming and TLI is super stressful
+*If an action is required, there should be an obvious call to action
+-----------------------------------------------------------------------
+Basic Design Foundations
+
+*Typography is Super Important
+ Sans Serif: Arial, Arial Bl, Tahoma, Trebuchet MS & Verdana
+ Serif: Courier, Courier New, Georgia, Times, Times New Roman
+
+*Images Cannot be Embedded, they Must be hosted on a Web Server and then pulled into email using absolute paths.
+	Remember that most email clients block images from first time 	receipeints of any email, so your text is super important for 	making a good impression.
+
+*Calls to Action: Huge email driver, it may be the only purpose to get 	the reader to perform this task - it should be pursuasive and 		compelling,it should be descriptive, not click here, use command 	verbs and give readers a reason why they should complete the call 	to acton. Make sure the content related to the button or link 	shows the advantage of taking the action - don't be pushy, but 	insert a sense of urgency
+
+
+*Max width is around 600px
+
+*Do not build a complicated structure, make it as clean as possible, make your code clean.
+-----------------------------------------------------------------------
+
+Best Practices
+
+*Tables Rule the Day, Element Tags: <Table>, Table Row <tr>, and Table Data <td>
+
+Table - defines the start and end of the table
+
+Table Row - defines a row in the table, and rows are how the table is horizontally structured, every table has at least one row, and rows always span the full width of the table. 
+
+Table Data - defines the data cell within the table (colum cells), defines the vertical structure of the table, the cells hold everything from images to text, there can be more than one per row, they can span multiple rows by use of the "row span" attribute, and they can span the width of multiple cells using the "call span" attribute. 
+
+-----------------------------------------------------------------------
+Mobile Friendly & Responsive Design
+
+*Mobile friendly is NOT necessarily responsive
+*Responsive email is USUALLY ALWAYS mobile friendly
+
+Moblie Friendly Email:
+
+Fixed-width, but still mobile optimized (300px phone screen in portrait)
+
+Font sizes that don't change, but large enough to be readable
+(16px or 17px)
+
+Multi-colum layout that allows readers to tap and zoom to read
+
+Uses large, thumb-tappable buttons for CTA
+
+
+Responsive Email:
+
+Uses media queries to adjust email width (adapts to any screen size in any orientation)
+
+Changes font size from desktop to mobile displays (several display sizes can be targeted using different media queries)
+
+Layouts can be changed from multi-column to single column on the fly
+
+Elements can be shown or hidden based on the platform
+
+
+-----------------------------------------------------------------------
+
+Testing
+
+You have to send through an email service provider like Mailchimp
+
+
+*You can test by practical method, which is having a million test accounts on different browser based email services
+	look at how they alter the html and css
+	set up an account at Gmail, and then forward to others
+	leave the junk mail filter to default
+	leave the image blocking on, so look at it first
+	avoid accepting all images from one email addres
+	Use the Chrome Inspector to see more details
+	Get Outlook, Live Mail, Thunderbird as well
+	Get an iPhone, iPad, Android devices for testing
+
+
+*You can test by using a service, like Litmus to do the testing for you, but know that it may be hard to see what's wrong, because you cannot dive directly into the code of the offending party.
+
+
+
+
+
